@@ -1,0 +1,68 @@
+{
+  "version": "1.0",
+  "resources": [
+    {
+      "resource": "asset",
+      "metadata": {
+        "folderPath": {
+          "defaultValue": "Oncospark",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "Oncospark_Email_Credential",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "folderPath": {
+          "defaultValue": "Oncospark",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "SMTP_Host",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "folderPath": {
+          "defaultValue": "Oncospark",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "SMTP_Port",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    }
+  ]
+}

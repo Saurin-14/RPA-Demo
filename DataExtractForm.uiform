@@ -1,0 +1,146 @@
+﻿{
+  "Metadata": {
+    "Id": "c2e5b439-a2b8-4317-88ac-d04a605c3334",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "Generate_Oncospark_Bot_Report",
+    "Width": 800,
+    "Height": 600,
+    "Theme": "Flatly",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "tag": "h6",
+        "content": "Note:\n\nTo check the pending or completed data status for the current day, select the required Bot Name from the drop-down list and click Submit.\nTo download a report for a specific bot, select the Bot Name, specify the From Date and To Date, and then click Submit.\nTo view today's status and download a report, complete both of the above actions separately by following Steps 1 and 2.",
+        "key": "label",
+        "input": false,
+        "tableView": false,
+        "label": "Label",
+        "type": "label"
+      },
+      {
+        "components": [
+          {
+            "label": "Status Check",
+            "key": "tab1",
+            "components": [
+              {
+                "label": "Select a Process To Check Pending/Completed Data",
+                "widget": "choicesjs",
+                "placeholder": "All",
+                "tableView": true,
+                "data": {
+                  "values": [
+                    {
+                      "label": "Pending - DMA Claim Status Extraction",
+                      "value": "DMAPending"
+                    },
+                    {
+                      "label": "Pending - NBSC Claim Status Extraction",
+                      "value": "NBSCPending"
+                    },
+                    {
+                      "label": "Pending - Byram Denial Extraction",
+                      "value": "DenialPending"
+                    },
+                    {
+                      "label": "Completed - DMA Claim Status Extraction",
+                      "value": "DMACompleted"
+                    },
+                    {
+                      "label": "Completed - NBSC Claim Status Extraction",
+                      "value": "NBSCCompleted"
+                    },
+                    {
+                      "label": "Completed - Byram Denial Extraction",
+                      "value": "DenialCompleted"
+                    }
+                  ]
+                },
+                "key": "Status",
+                "type": "select",
+                "input": true
+              }
+            ]
+          }
+        ],
+        "key": "tabs",
+        "type": "tabs",
+        "input": false,
+        "tableView": false,
+        "label": "Tabs"
+      },
+      {
+        "components": [
+          {
+            "label": "Date-wise Report",
+            "key": "tab2",
+            "components": [
+              {
+                "label": "Select a Process to Generate a Date-wise Report",
+                "widget": "choicesjs",
+                "tableView": true,
+                "defaultValue": [
+                  "all"
+                ],
+                "data": {
+                  "values": [
+                    {
+                      "label": "Claim Extraction-DMA",
+                      "value": "Claim Extraction-DMA"
+                    },
+                    {
+                      "label": "Claim Extraction-NBSC",
+                      "value": "Claim Extraction-NBSC"
+                    },
+                    {
+                      "label": "Claim Extraction-Byram Denial",
+                      "value": "Claim Extraction-Byram Denial"
+                    }
+                  ]
+                },
+                "key": "selectTheProcess",
+                "type": "select",
+                "input": true
+              },
+              {
+                "label": "From Date",
+                "placeholder": "MM/dd/yyyy",
+                "tableView": true,
+                "key": "fromDate",
+                "type": "textfield",
+                "input": true
+              },
+              {
+                "label": "To Date",
+                "placeholder": "MM/dd/yyyy",
+                "tableView": true,
+                "key": "toDate",
+                "type": "textfield",
+                "input": true
+              }
+            ]
+          }
+        ],
+        "key": "tabs1",
+        "type": "tabs",
+        "input": false,
+        "tableView": false,
+        "label": "Tabs"
+      },
+      {
+        "label": "Submit",
+        "tableView": false,
+        "key": "generateReport",
+        "type": "button",
+        "input": true,
+        "saveOnEnter": false
+      }
+    ]
+  }
+}

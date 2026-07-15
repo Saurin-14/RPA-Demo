@@ -1,0 +1,157 @@
+﻿{
+  "Metadata": {
+    "Id": "02d5a603-28d5-4692-8f68-85ed4bb9d212",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "Generate_Oncospark_Bot_Report",
+    "Width": 800,
+    "Height": 600,
+    "Theme": "Flatly",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "label": "Select a process to check pending/completed data",
+        "widget": "choicesjs",
+        "placeholder": "All",
+        "tableView": true,
+        "data": {
+          "values": [
+            {
+              "label": "Pending - DMA Claim Status Extraction",
+              "value": "PendingDMA"
+            },
+            {
+              "label": "Pending - NBSC Claim Status Extraction",
+              "value": "PendingNBSC"
+            },
+            {
+              "label": "Pending - Byram Denial Extraction",
+              "value": "PendingDenial"
+            }
+          ]
+        },
+        "key": "select",
+        "type": "select",
+        "input": true
+      },
+      {
+        "label": "Select Option To Get Status",
+        "optionsLabelPosition": "right",
+        "inline": false,
+        "tableView": false,
+        "defaultValue": "getDmaClaimStatusExtractionCompletedRecords",
+        "values": [
+          {
+            "label": "Get DMA CS Extraction Pending Records",
+            "value": "DMAPending",
+            "shortcut": ""
+          },
+          {
+            "label": "Get DMA CS Extraction Today's Completed Records",
+            "value": "DMACompleted",
+            "shortcut": ""
+          },
+          {
+            "label": "Get NBSC Waystar Bot Pending Records",
+            "value": "NBSCPending",
+            "shortcut": ""
+          },
+          {
+            "label": "Get NBSC Waystar Bot Todays' Completed Records",
+            "value": "NBSCComp",
+            "shortcut": ""
+          },
+          {
+            "label": "Get Denial Waystar Bot Pending Records",
+            "value": "DenialPending",
+            "shortcut": ""
+          },
+          {
+            "label": "Get Denial Waystar Bot Todays' Completed Records",
+            "value": "DenialComp",
+            "shortcut": ""
+          }
+        ],
+        "validate": {
+          "required": true
+        },
+        "errorLabel": "Select At Least One Option",
+        "key": "Radio",
+        "type": "radio",
+        "input": true
+      },
+      {
+        "content": "Note: The checkbox above displays data only for today’s pending or completed items; it does not show pending or completed data from previous dates.",
+        "key": "label",
+        "input": false,
+        "tableView": false,
+        "label": "Label",
+        "type": "label"
+      },
+      {
+        "label": "Select The Process",
+        "widget": "choicesjs",
+        "tableView": true,
+        "defaultValue": [
+          "all"
+        ],
+        "data": {
+          "values": [
+            {
+              "label": "Claim Extraction-DMA",
+              "value": "Claim Extraction-DMA"
+            },
+            {
+              "label": "Claim Extracion-NBSC",
+              "value": "Claim Extracion-NBSC"
+            },
+            {
+              "label": "Claim Extraction-Byram Denial",
+              "value": "Claim Extraction-Byram Denial"
+            }
+          ]
+        },
+        "key": "selectTheProcess",
+        "type": "select",
+        "input": true
+      },
+      {
+        "label": "From Date",
+        "placeholder": "MM/dd/yyyy",
+        "tableView": true,
+        "key": "fromDate",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "To Date",
+        "placeholder": "MM/dd/yyyy",
+        "tableView": true,
+        "key": "toDate",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Generate Report",
+        "tableView": false,
+        "key": "generateReport",
+        "type": "button",
+        "input": true,
+        "saveOnEnter": false
+      },
+      {
+        "content": "Note: If you want to download the report or check the DMA status, you must click the Generate Report button. Only after doing so will you be able to receive the report or view the status.\r\n",
+        "key": "label1",
+        "input": false,
+        "tableView": false,
+        "label": "Label",
+        "type": "label"
+      }
+    ]
+  }
+}

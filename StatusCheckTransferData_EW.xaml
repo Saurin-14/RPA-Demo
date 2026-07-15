@@ -1,0 +1,593 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="StatusCheckTransferData_EW" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1020,1998.4" sap2010:WorkflowViewState.IdRef="StatusCheckTransferData_EW_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ufa="clr-namespace:UiPath.Forms.Activities;assembly=UiPath.Forms.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Studio.Forms.Runtime</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Forms.Activities</x:String>
+      <x:String>UiPath.Platform.GlobalVariables</x:String>
+      <x:String>UiPath.Forms.Activities.Base</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Database</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Database.Activities</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Forms.Runtime</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Forms.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Database</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.NetworkInformation</AssemblyReference>
+      <AssemblyReference>System.Net.Ping</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="StatusCheckTransferData_EW" sap:VirtualizedContainerService.HintSize="839.6,4772.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="RadioOption" />
+      <Variable x:TypeArguments="x:String" Name="selectOptionToGetPendingStatus" />
+      <Variable x:TypeArguments="x:String" Name="DbString" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtPendingERP" />
+      <Variable x:TypeArguments="x:String" Name="StatusVal" />
+      <Variable x:TypeArguments="x:String" Name="transferDataToWaystar" />
+      <Variable x:TypeArguments="x:Int32" Name="insertedrows" />
+      <Variable x:TypeArguments="x:String" Name="FromEmail" />
+      <Variable x:TypeArguments="ss:SecureString" Name="FromEmailBoxPW" />
+      <Variable x:TypeArguments="x:String" Name="Emailpwd" />
+      <Variable x:TypeArguments="x:String" Name="SMTPhost" />
+      <Variable x:TypeArguments="x:String" Name="SMTPport" />
+      <Variable x:TypeArguments="x:String" Name="IDList" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtPendingNBSC" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtNBSCComp" />
+      <Variable x:TypeArguments="x:String" Name="mailBody" />
+      <Variable x:TypeArguments="x:String" Name="SelectOption" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ufa:ShowFormActivity Height="{x:Null}" InstanceName="{x:Null}" Left="{x:Null}" ShowInTaskbar="{x:Null}" ShowMargin="{x:Null}" Title="{x:Null}" Top="{x:Null}" TopMost="{x:Null}" Width="{x:Null}" WindowState="{x:Null}" DisplayName="Show Form" FormId="3fb679c1-42ad-474c-b97d-6aec84b2e394" sap:VirtualizedContainerService.HintSize="451.2,219.2" sap2010:WorkflowViewState.IdRef="ShowFormActivity_2" IsAsync="False">
+      <ufa:ShowFormActivity.Arguments>
+        <InOutArgument x:TypeArguments="x:String" x:Key="SelectOption">[SelectOption]</InOutArgument>
+      </ufa:ShowFormActivity.Arguments>
+    </ufa:ShowFormActivity>
+    <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[SelectOption]" sap:VirtualizedContainerService.HintSize="451.2,524" sap2010:WorkflowViewState.IdRef="Switch`1_3">
+      <Switch.Default>
+        <Sequence DisplayName="Default" sap:VirtualizedContainerService.HintSize="449.6,89.6" sap2010:WorkflowViewState.IdRef="Sequence_22">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </Switch.Default>
+      <Sequence x:Key="DMA" DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,89.6" sap2010:WorkflowViewState.IdRef="Sequence_20">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Sequence>
+      <Sequence x:Key="MDA" DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,89.6" sap2010:WorkflowViewState.IdRef="Sequence_21">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Sequence>
+    </Switch>
+    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="Oncospark_Email_Credential" CacheStrategy="None" DisplayName="Get Credential-Oncospark frommailID" FolderPath="Oncospark" sap:VirtualizedContainerService.HintSize="451.2,175.2" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[FromEmailBoxPW]" Username="[FromEmail]" />
+    <Assign sap:VirtualizedContainerService.HintSize="451.2,174.4" sap2010:WorkflowViewState.IdRef="Assign_6">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[Emailpwd]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[New system.Net.NetworkCredential(String.Empty, FromEmailBoxPW).Password]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="SMTP_Host" CacheStrategy="None" DisplayName="Get Asset smtp host" FolderPath="Oncospark" sap:VirtualizedContainerService.HintSize="451.2,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_2">
+      <ui:GetRobotAsset.Value>
+        <OutArgument x:TypeArguments="x:String">[SMTPhost]</OutArgument>
+      </ui:GetRobotAsset.Value>
+    </ui:GetRobotAsset>
+    <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="SMTP_Port" CacheStrategy="None" DisplayName="Get Asset smtp port" FolderPath="Oncospark" sap:VirtualizedContainerService.HintSize="451.2,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_3">
+      <ui:GetRobotAsset.Value>
+        <OutArgument x:TypeArguments="x:String">[SMTPport]</OutArgument>
+      </ui:GetRobotAsset.Value>
+    </ui:GetRobotAsset>
+    <ui:CopyFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="TransferOutout.xlsx" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="451.2,222.4" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="TransferOutputTemplate.xlsx" />
+    <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="451.2,112.8" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="TransferOutput.xlsx" />
+    <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="ProdDBConnectionString" CacheStrategy="None" DisplayName="Get Asset" FolderPath="Oncospark" sap:VirtualizedContainerService.HintSize="451.2,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+      <ui:GetRobotAsset.Value>
+        <OutArgument x:TypeArguments="x:String">[DbString]</OutArgument>
+      </ui:GetRobotAsset.Value>
+    </ui:GetRobotAsset>
+    <ufa:ShowFormActivity Height="{x:Null}" InstanceName="{x:Null}" Left="{x:Null}" ShowInTaskbar="{x:Null}" ShowMargin="{x:Null}" Top="{x:Null}" TopMost="{x:Null}" Width="{x:Null}" DisplayName="Show Form" FormId="6a6989a1-bd2e-4b8e-b6a4-746bdfa1ccfe" sap:VirtualizedContainerService.HintSize="451.2,219.2" sap2010:WorkflowViewState.IdRef="ShowFormActivity_1" IsAsync="False" Title="Status Check and Transfer Data" WindowState="[UiPath.Studio.Forms.Runtime.WindowState.Normal]">
+      <ufa:ShowFormActivity.Arguments>
+        <InOutArgument x:TypeArguments="x:String" x:Key="selectOptionToGetPendingStatus">[selectOptionToGetPendingStatus]</InOutArgument>
+      </ufa:ShowFormActivity.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ufa:ShowFormActivity>
+    <Assign sap:VirtualizedContainerService.HintSize="451.2,174.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[StatusVal]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </Assign.Value>
+    </Assign>
+    <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[selectOptionToGetPendingStatus]" sap:VirtualizedContainerService.HintSize="451.2,2288.8" sap2010:WorkflowViewState.IdRef="Switch`1_2">
+      <Switch.Default>
+        <Sequence DisplayName="Default" sap:VirtualizedContainerService.HintSize="449.6,89.6" sap2010:WorkflowViewState.IdRef="Sequence_17">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </Switch.Default>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" x:Key="-1" AutoCloseAfter="00:00:10" sap:VirtualizedContainerService.HintSize="449.6,90.4" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Select Valid option &quot;]" />
+      <Sequence x:Key="ERPPending" DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,508" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" ConnectionString="[DbString]" DataTable="[dtPendingERP]" DisplayName="Run query" sap:VirtualizedContainerService.HintSize="416,147.2" sap2010:WorkflowViewState.IdRef="ExecuteQuery_2" ProviderName="Microsoft.Data.SqlClient" Sql="select count(*)[Pending],HostName,InputDate from tbl_ByramERPOutput where Processed is null&#xA;group by HostName,InputDate">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:InvokeCode ContinueOnError="{x:Null}" Code="If dt.RowCount&gt;0 Then&#xA;Dim strfinal As String=&quot;&quot;&#xA;Dim i As Integer=0&#xA;For i=0 To dt.RowCount-1&#xA;&#x9;If i=0 Then&#xA;&#x9;strfinal=&quot;For HostName  : &quot; + dt.Rows(i)(&quot;HostName&quot;).ToString + &quot; Pending count is : &quot; +  dt.Rows(i)(&quot;Pending&quot;).ToString + &quot; For InputDate  : &quot; + dt.Rows(i)(&quot;InputDate&quot;).ToString.Replace(&quot;00:00:00&quot;,&quot;&quot;)&#xA;Else &#xA;&#x9;strfinal=strfinal + &quot;  &quot; + &quot; For HostName  : &quot; + dt.Rows(i)(&quot;HostName&quot;).ToString + &quot; Pending count is : &quot; +  dt.Rows(i)(&quot;Pending&quot;).ToString + &quot; For InputDate  : &quot; + dt.Rows(i)(&quot;InputDate&quot;).ToString ().Replace(&quot;00:00:00&quot;,&quot;&quot;)&#xA;End If&#xA;&#x9;Next&#xA;&#x9;arMsg=strfinal&#xA;Else&#xA;&#x9;arMsg=&quot;No Pending Data Found for ByramERP Bot!&quot;&#xA;End If" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="416,196.8" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+          <ui:InvokeCode.Arguments>
+            <InArgument x:TypeArguments="sd:DataTable" x:Key="dt">[dtPendingERP]</InArgument>
+            <InOutArgument x:TypeArguments="x:String" x:Key="arMsg">[StatusVal]</InOutArgument>
+          </ui:InvokeCode.Arguments>
+        </ui:InvokeCode>
+        <ui:ClearDataTable DataTable="[dtPendingERP]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="416,104" sap2010:WorkflowViewState.IdRef="ClearDataTable_2" />
+      </Sequence>
+      <Sequence x:Key="WaystarPending" DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,24.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" ConnectionString="[DbString]" DataTable="[dtPendingERP]" DisplayName="Run query" sap:VirtualizedContainerService.HintSize="382.4,147.2" sap2010:WorkflowViewState.IdRef="ExecuteQuery_3" ProviderName="Microsoft.Data.SqlClient" Sql="&#xA;select count(*)[Pending],ServerId,InputDate from tbl_WaystarByramInputClaimData where Processed is null&#xA;group by ServerId,Inputdate">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:InvokeCode ContinueOnError="{x:Null}" Code="If dt.RowCount&gt;0 Then&#xA;Dim strfinal As String=&quot;&quot;&#xA;Dim i As Integer=0&#xA;For i=0 To dt.RowCount-1&#xA;&#x9;If i=0 Then&#xA;&#x9;strfinal=&quot;For RP  : &quot; + dt.Rows(i)(&quot;ServerId&quot;).ToString + &quot; Pending count is : &quot; +  dt.Rows(i)(&quot;Pending&quot;).ToString + &quot; For InputDate  : &quot; + dt.Rows(i)(&quot;InputDate&quot;).ToString ().Replace(&quot;00:00:00&quot;,&quot;&quot;)&#xA;Else &#xA;&#x9;strfinal=strfinal + &quot;  &quot; + &quot; For RP  : &quot; + dt.Rows(i)(&quot;ServerId&quot;).ToString + &quot; Pending count is : &quot; +  dt.Rows(i)(&quot;Pending&quot;).ToString + &quot; For InputDate  : &quot; + dt.Rows(i)(&quot;InputDate&quot;).ToString ().Replace(&quot;00:00:00&quot;,&quot;&quot;)&#xA;End If&#xA;&#x9;Next&#xA;&#x9;arMsg=strfinal&#xA;Else&#xA;&#x9;arMsg=&quot;No Pending Data Found for ByramWaystar Bot!&quot;&#xA;End If" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="382.4,196.8" sap2010:WorkflowViewState.IdRef="InvokeCode_2">
+          <ui:InvokeCode.Arguments>
+            <InArgument x:TypeArguments="sd:DataTable" x:Key="dt">[dtPendingERP]</InArgument>
+            <InOutArgument x:TypeArguments="x:String" x:Key="arMsg">[StatusVal]</InOutArgument>
+          </ui:InvokeCode.Arguments>
+        </ui:InvokeCode>
+        <ui:ClearDataTable DataTable="[dtPendingERP]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="382.4,104" sap2010:WorkflowViewState.IdRef="ClearDataTable_3" />
+      </Sequence>
+      <Sequence x:Key="ERPComp" DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,24.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" ConnectionString="[DbString]" DataTable="[dtPendingERP]" DisplayName="Run query" sap:VirtualizedContainerService.HintSize="750.4,147.2" sap2010:WorkflowViewState.IdRef="ExecuteQuery_4" ProviderName="Microsoft.Data.SqlClient" Sql="select count(*)[Completed],HostName,InputDate from tbl_ByramERPOutput &#xA;where convert(date,StartDateTime,101)=convert(date,getdate(),101) and Processed is not null&#xA;group by HostName,Inputdate">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:InvokeCode ContinueOnError="{x:Null}" Code="If dt.RowCount&gt;0 Then&#xA;Dim strfinal As String=&quot;&quot;&#xA;Dim i As Integer=0&#xA;For i=0 To dt.RowCount-1&#xA;&#x9;If i=0 Then&#xA;&#x9;strfinal=&quot;For HostName  : &quot; + dt.Rows(i)(&quot;HostName&quot;).ToString + &quot; Completed count is : &quot; +  dt.Rows(i)(&quot;Completed&quot;).ToString + &quot; For InputDate  : &quot; + dt.Rows(i)(&quot;InputDate&quot;).ToString ().Replace(&quot;00:00:00&quot;,&quot;&quot;)&#xA;Else &#xA;&#x9;strfinal=strfinal + &quot;  &quot; + &quot; For HostName  : &quot; + dt.Rows(i)(&quot;HostName&quot;).ToString + &quot; Completed count is : &quot; +  dt.Rows(i)(&quot;Completed&quot;).ToString + &quot; For InputDate  : &quot; + dt.Rows(i)(&quot;InputDate&quot;).ToString ().Replace(&quot;00:00:00&quot;,&quot;&quot;)&#xA;End If&#xA;&#x9;Next&#xA;&#x9;arMsg=strfinal&#xA;Else&#xA;&#x9;arMsg=&quot;No Completed Data Found for ByramERP Bot!&quot;&#xA;End If" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="750.4,196.8" sap2010:WorkflowViewState.IdRef="InvokeCode_3">
+          <ui:InvokeCode.Arguments>
+            <InArgument x:TypeArguments="sd:DataTable" x:Key="dt">[dtPendingERP]</InArgument>
+            <InOutArgument x:TypeArguments="x:String" x:Key="arMsg">[StatusVal]</InOutArgument>
+          </ui:InvokeCode.Arguments>
+        </ui:InvokeCode>
+        <ui:ClearDataTable DataTable="[dtPendingERP]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="750.4,104" sap2010:WorkflowViewState.IdRef="ClearDataTable_4" />
+      </Sequence>
+      <Sequence x:Key="WaystarComp" DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,24.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" ConnectionString="[DbString]" DataTable="[dtPendingERP]" DisplayName="Run query" sap:VirtualizedContainerService.HintSize="382.4,147.2" sap2010:WorkflowViewState.IdRef="ExecuteQuery_5" ProviderName="Microsoft.Data.SqlClient" Sql="select count(*)[Completed],ServerId,InputDate from tbl_WaystarByramInputClaimData &#xA;where convert(date,StartDateTime,101)=convert(date,getdate(),101) and Processed is not null&#xA;group by ServerId,Inputdate">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:InvokeCode ContinueOnError="{x:Null}" Code="If dt.RowCount&gt;0 Then&#xA;Dim strfinal As String=&quot;&quot;&#xA;Dim i As Integer=0&#xA;For i=0 To dt.RowCount-1&#xA;&#x9;If i=0 Then&#xA;&#x9;strfinal=&quot;For RP  : &quot; + dt.Rows(i)(&quot;ServerId&quot;).ToString + &quot; Completed count is : &quot; +  dt.Rows(i)(&quot;Completed&quot;).ToString + &quot; For InputDate  : &quot; + dt.Rows(i)(&quot;InputDate&quot;).ToString ().Replace(&quot;00:00:00&quot;,&quot;&quot;)&#xA;Else &#xA;&#x9;strfinal=strfinal + &quot;  &quot; + &quot; For RP  : &quot; + dt.Rows(i)(&quot;ServerId&quot;).ToString + &quot; Completed count is : &quot; +  dt.Rows(i)(&quot;Completed&quot;).ToString + &quot; For InputDate  : &quot; + dt.Rows(i)(&quot;InputDate&quot;).ToString ().Replace(&quot;00:00:00&quot;,&quot;&quot;)&#xA;End If&#xA;&#x9;Next&#xA;&#x9;arMsg=strfinal&#xA;Else&#xA;&#x9;arMsg=&quot;No Completed Data Found for ByramWaystar Bot!&quot;&#xA;End If" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="382.4,196.8" sap2010:WorkflowViewState.IdRef="InvokeCode_4">
+          <ui:InvokeCode.Arguments>
+            <InArgument x:TypeArguments="sd:DataTable" x:Key="dt">[dtPendingERP]</InArgument>
+            <InOutArgument x:TypeArguments="x:String" x:Key="arMsg">[StatusVal]</InOutArgument>
+          </ui:InvokeCode.Arguments>
+        </ui:InvokeCode>
+        <ui:ClearDataTable DataTable="[dtPendingERP]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="382.4,104" sap2010:WorkflowViewState.IdRef="ClearDataTable_5" />
+      </Sequence>
+      <Sequence x:Key="Transfer" DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,24.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="sd:DataTable" Name="dtTransfer" />
+        </Sequence.Variables>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" ConnectionString="[DbString]" DataTable="[dtTransfer]" DisplayName="Run query" sap:VirtualizedContainerService.HintSize="721.6,147.2" sap2010:WorkflowViewState.IdRef="ExecuteQuery_6" ProviderName="Microsoft.Data.SqlClient" Sql="Select InvoiceNo,ActDataSetId,DateofService,TotalBilledAmount,convert(Date,GETDATE(),101),ByramERPId From tbl_ByramERPWaystarMapping bm &#xA;inner Join tbl_ByramERPOutput be On bm.ByramERPId=be.ID And Processed='Yes' &#xA;and TotalBilledAmount is not null and ActDataSetId is not null&#xA;Where ByramERPTranStatus='Yes' and WaystarInserted is null">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <If Condition="[dtTransfer.RowCount&gt;0]" sap:VirtualizedContainerService.HintSize="721.6,2276.8" sap2010:WorkflowViewState.IdRef="If_2">
+          <If.Then>
+            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="659.2,1944.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtTransfer]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="625.6,880.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRowtransfer" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="502.4,699.2" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If Condition="[IDList=&quot;&quot;]" sap:VirtualizedContainerService.HintSize="468.8,56.8" sap2010:WorkflowViewState.IdRef="If_4">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If.Then>
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="467.2,164.8" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_8">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[IDList]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[CurrentRowtransfer("ByramERPId").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="467.2,164.8" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_9">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[IDList]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[IDList+","+CurrentRowtransfer("ByramERPId").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                      <If Condition="[CurrentRowtransfer(&quot;DateOfService&quot;).ToString.Contains(&quot;-&quot;)]" sap:VirtualizedContainerService.HintSize="468.8,392.8" sap2010:WorkflowViewState.IdRef="If_3">
+                        <If.Then>
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="467.2,164.8" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_3">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Object">[CurrentRowtransfer("DateOfService")]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[CurrentRowtransfer("DateOfService").ToString.Replace("-","/")]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="467.2,89.6" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="468.8,84.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                        <ui:CommentOut.Body>
+                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_4">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Object">[CurrentRowtransfer("DateOfService")]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[CurrentRowtransfer("DateOfService").ToString.Split("/")(1).PadLeft(2,"0"c)+"/"+CurrentRowtransfer("DateOfService").ToString.Split("/")(0).PadLeft(2,"0"c)+"/"+CurrentRowtransfer("DateOfService").ToString.Split("/")(2)]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </ui:CommentOut.Body>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:CommentOut>
+                      <Assign sap:VirtualizedContainerService.HintSize="468.8,104.8" sap2010:WorkflowViewState.IdRef="Assign_5">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Object">[CurrentRowtransfer("DateOfService")]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Object">[CurrentRowtransfer("DateOfService").ToString.Replace("00:00:00","").Trim]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ForEachRow>
+              <ui:ExecuteNonQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" AffectedRecords="[insertedrows]" ConnectionString="[DbString]" sap:VirtualizedContainerService.HintSize="625.6,147.2" sap2010:WorkflowViewState.IdRef="ExecuteNonQuery_1" ProviderName="Microsoft.Data.SqlClient" Sql="insert Into tbl_WaystarByramInputClaimData(InvoiceNo,ActDataSetId,DateOfService,ERPBilledAmount)&#xA;&#xA;Select InvoiceNo,ActDataSetId,DateofService,TotalBilledAmount From tbl_ByramERPWaystarMapping bm &#xA;inner Join tbl_ByramERPOutput be On bm.ByramERPId=be.ID &#xA;And Processed='Yes' and TotalBilledAmount is not null and ActDataSetId is not null&#xA;Where ByramERPTranStatus='Yes' and WaystarInserted is null">
+                <ui:ExecuteNonQuery.Parameters>
+                  <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                </ui:ExecuteNonQuery.Parameters>
+              </ui:ExecuteNonQuery>
+              <ui:ExecuteNonQuery AffectedRecords="{x:Null}" ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" ConnectionString="[DbString]" DisplayName="Run command" sap:VirtualizedContainerService.HintSize="625.6,147.2" sap2010:WorkflowViewState.IdRef="ExecuteNonQuery_2" ProviderName="Microsoft.Data.SqlClient" Sql="With UpdateData  As&#xA;(&#xA;SELECT Id,&#xA;case when (ROW_NUMBER() over (order by InvoiceNo )%2)+3=4 then 4 else 5 end  as RN&#xA;FROM tbl_WaystarByramInputClaimData&#xA;)&#xA;UPDATE tbl_WaystarByramInputClaimData SET ServerId = RN,Inputdate=convert(date,GETDATE(),101)&#xA;FROM tbl_WaystarByramInputClaimData&#xA;INNER JOIN UpdateData ON tbl_WaystarByramInputClaimData.Id = UpdateData.Id where processed is null and serverid is null">
+                <ui:ExecuteNonQuery.Parameters>
+                  <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                </ui:ExecuteNonQuery.Parameters>
+              </ui:ExecuteNonQuery>
+              <ui:ExecuteNonQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" AffectedRecords="[insertedrows]" ConnectionString="[DbString]" DisplayName="Run command" sap:VirtualizedContainerService.HintSize="625.6,147.2" sap2010:WorkflowViewState.IdRef="ExecuteNonQuery_3" ProviderName="Microsoft.Data.SqlClient" Sql="[&quot;update tbl_ByramERPWaystarMapping&#xA;Set WaystarInserted='Yes'&#xA;&#x9;Where ByramERPId In (&quot; + IDList + &quot;)&quot;]">
+                <ui:ExecuteNonQuery.Parameters>
+                  <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                </ui:ExecuteNonQuery.Parameters>
+              </ui:ExecuteNonQuery>
+              <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" DataTable="[dtTransfer]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="625.6,148" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="TransferOutput.xlsx" />
+              <ui:InvokeCode ContinueOnError="{x:Null}" Code="Using client As New SmtpClient()&#xA;&#xA;client.Host = arHost&#xA;client.Port = arPort&#xA;client.Credentials = New System.Net.NetworkCredential(arFromEmail,arAccountPwd)&#xA;client.EnableSsl=True&#xA;&#xA;Dim message As New MailMessage()&#xA;message.From = New MailAddress(arFromEmail)&#xA;message.To.Add(arToEmail.Trim())&#xA;&#xA;Dim attch As New System.Net.Mail.Attachment(arAttachmentPath)&#xA;message.Attachments.Add(attch)&#xA;&#xA;message.Subject=arSubject&#xA;message.IsBodyHtml=True&#xA;message.Body=arBody&#xA;&#xA;client.Send(message)&#xA;Console.WriteLine(&quot;Email Sent&quot;)&#xA;End Using" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="625.6,196.8" sap2010:WorkflowViewState.IdRef="InvokeCode_5">
+                <ui:InvokeCode.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="arFromEmail">[FromEmail]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="arToEmail">kruti.jhaveri@outamation.com,prasath@oncospark.com,sharab@oncospark.com,rajasekarh@oncospark.com</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="arAttachmentPath">TransferOutput.xlsx</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="arSubject">["Prod | Report | ERPTOWaystarTransferData | "+Now.Date.ToShortDateString.Replace("/","")]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="arBody" xml:space="preserve">&lt;html&gt;
+&lt;body&gt;
+Hi, &lt;br/&gt;
+Please find the attached report For Erp bot proccessed data transfer to waystar bot as input Process&lt;br/&gt;&lt;br/&gt;
+Regards,&lt;br/&gt;
+RPA - OUTAMATION.
+&lt;/body&gt;
+&lt;/html&gt;</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="arAccountPwd">[Emailpwd]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="arHost">[SMTPhost]</InArgument>
+                  <InArgument x:TypeArguments="x:Int32" x:Key="arPort">[Cint(SMTPport)]</InArgument>
+                </ui:InvokeCode.Arguments>
+              </ui:InvokeCode>
+              <Assign sap:VirtualizedContainerService.HintSize="625.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_7">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[StatusVal]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String" xml:space="preserve">[dtTransfer.RowCount.ToString  + " records has been inserted in waystar bot."]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:ClearDataTable DataTable="[dtTransfer]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="625.6,104" sap2010:WorkflowViewState.IdRef="ClearDataTable_6" />
+            </Sequence>
+          </If.Then>
+          <If.Else>
+            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_10">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_2">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[StatusVal]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">No Data Found to insert in Waystar Bot</InArgument>
+                </Assign.Value>
+              </Assign>
+            </Sequence>
+          </If.Else>
+        </If>
+        <If Condition="[insertedrows=0]" sap:VirtualizedContainerService.HintSize="721.6,371.2" sap2010:WorkflowViewState.IdRef="If_1">
+          <If.Then>
+            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Sequence>
+          </If.Then>
+          <If.Else>
+            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Sequence>
+          </If.Else>
+        </If>
+      </Sequence>
+      <Sequence x:Key="NBSCPending" DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,508" sap2010:WorkflowViewState.IdRef="Sequence_18">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" ConnectionString="[DbString]" DataTable="[dtPendingNBSC]" DisplayName="Run query" sap:VirtualizedContainerService.HintSize="416,147.2" sap2010:WorkflowViewState.IdRef="ExecuteQuery_7" ProviderName="Microsoft.Data.SqlClient" Sql="select count(*) as [Pending], HostName, InputDate from [tbl_WaystarNBSCInputClaimData] where Processed is null group by HostName, InputDate">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:InvokeCode ContinueOnError="{x:Null}" Code="If dt.RowCount&gt;0 Then&#xA;Dim strfinal As String=&quot;&quot;&#xA;Dim i As Integer=0&#xA;For i=0 To dt.RowCount-1&#xA;&#x9;If i=0 Then &#xA;&#x9;&#x9;strfinal=&quot;For &quot; + dt.Rows(i)(&quot;HostName&quot;).ToString.Replace(&quot;ONCO_&quot;,&quot;&quot;) +&quot; Pending count is : &quot; +  dt.Rows(i)(&quot;Pending&quot;).ToString + &quot; For InputDate  : &quot; + dt.Rows(i)(&quot;InputDate&quot;).ToString ().Replace(&quot;00:00:00&quot;,&quot;&quot;)&#xA;&#x9;'strfinal=&quot;For RP  : &quot; + dt.Rows(i)(&quot;ServerId&quot;).ToString + &quot; Pending count is : &quot; +  dt.Rows(i)(&quot;Pending&quot;).ToString + &quot; For InputDate  : &quot; + dt.Rows(i)(&quot;InputDate&quot;).ToString ().Replace(&quot;00:00:00&quot;,&quot;&quot;)&#xA;Else &#xA;&#x9;strfinal=strfinal + &quot;  &quot; + &quot;For &quot; + dt.Rows(i)(&quot;HostName&quot;).ToString.Replace(&quot;ONCO_&quot;,&quot;&quot;) +&quot; Pending count is : &quot; +  dt.Rows(i)(&quot;Pending&quot;).ToString + &quot; For InputDate  : &quot; + dt.Rows(i)(&quot;InputDate&quot;).ToString ().Replace(&quot;00:00:00&quot;,&quot;&quot;)&#xA;End If&#xA;&#x9;Next&#xA;&#x9;arMsg=strfinal&#xA;Else&#xA;&#x9;arMsg=&quot;No Pending Data Found for NBSCWaystar Bot!&quot;&#xA;End If&#xA;&#xA;&#xA; " DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="416,196.8" sap2010:WorkflowViewState.IdRef="InvokeCode_6">
+          <ui:InvokeCode.Arguments>
+            <InArgument x:TypeArguments="sd:DataTable" x:Key="dt">[dtPendingNBSC]</InArgument>
+            <InOutArgument x:TypeArguments="x:String" x:Key="arMsg">[StatusVal]</InOutArgument>
+          </ui:InvokeCode.Arguments>
+        </ui:InvokeCode>
+        <ui:ClearDataTable DataTable="[dtPendingNBSC]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="416,104" sap2010:WorkflowViewState.IdRef="ClearDataTable_7" />
+      </Sequence>
+      <Sequence x:Key="NBSCComp" DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,508" sap2010:WorkflowViewState.IdRef="Sequence_19">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" ConnectionString="[DbString]" DataTable="[dtNBSCComp]" DisplayName="Run query" sap:VirtualizedContainerService.HintSize="416,147.2" sap2010:WorkflowViewState.IdRef="ExecuteQuery_8" ProviderName="Microsoft.Data.SqlClient" Sql="select count(*)[Completed],HostName,InputDate from tbl_WaystarNBSCInputClaimData &#xA;where convert(date,StartDateTime,101)=convert(date,getdate(),101) and Processed is not null&#xA;group by HostName,Inputdate">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:InvokeCode ContinueOnError="{x:Null}" Code="If dt.RowCount&gt;0 Then&#xA;Dim strfinal As String=&quot;&quot;&#xA;Dim i As Integer=0&#xA;For i=0 To dt.RowCount-1&#xA;&#x9;If i=0 Then&#xA;&#x9;strfinal=&quot;For  : &quot; + dt.Rows(i)(&quot;HostName&quot;).ToString.Replace(&quot;ONCO_&quot;,&quot;&quot;) +&quot; Completed count is : &quot; +  dt.Rows(i)(&quot;Completed&quot;).ToString + &quot; For InputDate  : &quot; + dt.Rows(i)(&quot;InputDate&quot;).ToString ().Replace(&quot;00:00:00&quot;,&quot;&quot;)&#x9;&#xA;&#x9;'strfinal=&quot;For RP  : &quot; + dt.Rows(i)(&quot;ServerId&quot;).ToString + &quot; Completed count is : &quot; +  dt.Rows(i)(&quot;Completed&quot;).ToString + &quot; For InputDate  : &quot; + dt.Rows(i)(&quot;InputDate&quot;).ToString ().Replace(&quot;00:00:00&quot;,&quot;&quot;)&#xA;Else &#xA;&#x9;strfinal=strfinal + &quot;  &quot; + &quot;For  : &quot; + dt.Rows(i)(&quot;HostName&quot;).ToString.Replace(&quot;ONCO_&quot;,&quot;&quot;) +&quot; Completed count is : &quot; +  dt.Rows(i)(&quot;Completed&quot;).ToString + &quot; For InputDate  : &quot; + dt.Rows(i)(&quot;InputDate&quot;).ToString ().Replace(&quot;00:00:00&quot;,&quot;&quot;)&#x9;&#xA;End If&#xA;&#x9;Next&#xA;&#x9;arMsg=strfinal&#xA;Else&#xA;&#x9;arMsg=&quot;No Completed Data Found for NBSCWaystar Bot!&quot;&#xA;End If" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="416,196.8" sap2010:WorkflowViewState.IdRef="InvokeCode_7">
+          <ui:InvokeCode.Arguments>
+            <InArgument x:TypeArguments="sd:DataTable" x:Key="dt">[dtNBSCComp]</InArgument>
+            <InOutArgument x:TypeArguments="x:String" x:Key="arMsg">[StatusVal]</InOutArgument>
+          </ui:InvokeCode.Arguments>
+        </ui:InvokeCode>
+        <ui:ClearDataTable DataTable="[dtNBSCComp]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="416,104" sap2010:WorkflowViewState.IdRef="ClearDataTable_8" />
+      </Sequence>
+    </Switch>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="451.2,113.6" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[StatusVal]" />
+  </Sequence>
+</Activity>

@@ -1,0 +1,100 @@
+﻿{
+  "Metadata": {
+    "Id": "6a6989a1-bd2e-4b8e-b6a4-746bdfa1ccfe",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "StatusCheckTransferData_EW",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "content": "Byram ERP, Waystar Byram and Waystar NBSC Status check and Transfer Data bot",
+        "key": "label",
+        "input": false,
+        "tableView": false,
+        "label": "Label",
+        "type": "label"
+      },
+      {
+        "label": "Select Option To get pending status",
+        "optionsLabelPosition": "right",
+        "inline": false,
+        "tableView": false,
+        "defaultValue": -1,
+        "values": [
+          {
+            "label": "Select One",
+            "value": "-1",
+            "shortcut": ""
+          },
+          {
+            "label": "Get Byram ERP Bot Pending Status",
+            "value": "ERPPending",
+            "shortcut": ""
+          },
+          {
+            "label": "Get Byram Waystar Bot Pending Status",
+            "value": "WaystarPending",
+            "shortcut": ""
+          },
+          {
+            "label": "Get NBSC Waystar Bot Pending Status",
+            "value": "NBSCPending",
+            "shortcut": ""
+          },
+          {
+            "label": "Get Byram ERP Bot Today's Completed Status",
+            "value": "ERPComp",
+            "shortcut": ""
+          },
+          {
+            "label": "Get Byram Waystar Bot Todays' Completed Status",
+            "value": "WaystarComp",
+            "shortcut": ""
+          },
+          {
+            "label": "Get NBSC Waystar Bot Todays' Completed Status",
+            "value": "NBSCComp",
+            "shortcut": ""
+          },
+          {
+            "label": "TransferData To Waystar",
+            "value": "Transfer",
+            "shortcut": ""
+          }
+        ],
+        "validate": {
+          "required": true
+        },
+        "errorLabel": "Select at least one option",
+        "key": "selectOptionToGetPendingStatus",
+        "conditional": {
+          "show": true
+        },
+        "type": "radio",
+        "input": true
+      },
+      {
+        "content": "Note : This status will display bot's current pending status so that user can decide when to start the Byram Waystar Claim Extrcation bot",
+        "key": "label1",
+        "input": false,
+        "tableView": false,
+        "label": "Label",
+        "type": "label"
+      },
+      {
+        "type": "button",
+        "label": "Submit",
+        "key": "submit",
+        "disableOnInvalid": true,
+        "input": true,
+        "tableView": false
+      }
+    ]
+  }
+}
