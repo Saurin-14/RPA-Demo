@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Vvoq8865iE2IgeQRxR7C8g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="login.advancedmd.com" CVScreenId="6047c507-e0fe-4cea-a8b1-9b45f13f09dc" CvElementArea="444, 649, 385, 26" CvType="InputBox" DesignTimeRectangle="446, 650, 383, 24" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='frame-login' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='officeKey' tag='INPUT' type='text' class='form-control ng-untouched ng-pristine ng-invalid' aaname='Office key' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="cf24bf59-aa5b-4112-b6d2-9c1c6a2ae6bb" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login | AdvancedMD' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="6047c507-e0fe-4cea-a8b1-9b45f13f09dc" CvTextArea="445, 628, 62, 16" CvTextArgument="Office key" CvType="Text" DesignTimeRectangle="446, 627, 59, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl id='frame-login' tag='IFRAME' /&gt;&lt;webctrl aaname='Office key' tag='LABEL' /&gt;" Guid="a105f251-1e12-4a1b-9048-2699d3163756" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="4f20fe29314f1cb09745881556d53bd1.png" xmlns="">0n8MskJVOeEeyq4kjO15VeQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

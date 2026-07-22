@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Radio button 'PM'",
+  "Type": "Element",
+  "TaxonomyType": "RadioButton",
+  "Id": "uIOC7OUsQkm4gIzmfQvZRQ",
+  "Reference": "_TRBu2C9sEKVFTpRQxsdLA/uIOC7OUsQkm4gIzmfQvZRQ",
+  "ParentRef": "_TRBu2C9sEKVFTpRQxsdLA/fwHog0QSu0yfaSealtGe0w",
+  "Created": "2025-06-26T06:58:54.2939467Z",
+  "Updated": "2025-06-26T06:58:54.2939467Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.7.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

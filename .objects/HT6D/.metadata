@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Login  AdvancedMD",
+  "Type": "App",
+  "Id": "HT6DRSI590ukxcwYIei-Vw",
+  "Reference": "_TRBu2C9sEKVFTpRQxsdLA/HT6DRSI590ukxcwYIei-Vw",
+  "Created": "2025-06-26T06:56:25.9559106Z",
+  "Updated": "2025-06-26T06:56:25.9559106Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.7.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

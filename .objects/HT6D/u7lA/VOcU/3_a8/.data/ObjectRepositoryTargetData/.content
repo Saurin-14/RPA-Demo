@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="JtxaY_XrLESXL-6O8ur2wQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="static-100.advancedmd.com/practicemanager/reportcenter" CVScreenId="114acd05-e0e8-47a2-8a3c-283757b5da92" CvElementArea="1431, 199, 176, 27" CvType="InputBox" DesignTimeRectangle="1432, 200, 175, 25" ElementType="InputBox" Guid="1e97ad89-d63e-4e78-94b9-061e2819729e" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='TransactionDetail' title='Report Center' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="114acd05-e0e8-47a2-8a3c-283757b5da92" CvTextArea="1348, 207, 81, 15" CvTextArgument="Export on Run" CvType="Text" DesignTimeRectangle="1348, 206, 81, 15" ElementType="Text" Guid="301b3040-2c50-46ec-a537-ce8bf120150f" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="552d817425172d6064854a4767c118f8.png" xmlns="">0z1oGN4ywc0Oc2rWKDyE3Vg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

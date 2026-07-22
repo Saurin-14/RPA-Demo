@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Office key",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "A6ruBy_UZU209aDYGWsGaA",
+  "Reference": "_TRBu2C9sEKVFTpRQxsdLA/A6ruBy_UZU209aDYGWsGaA",
+  "ParentRef": "_TRBu2C9sEKVFTpRQxsdLA/fwHog0QSu0yfaSealtGe0w",
+  "Created": "2025-06-26T06:57:50.4975203Z",
+  "Updated": "2025-06-26T06:57:50.4975203Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.7.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="yXAr5mYLf06loY2yH1c_uA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="login.advancedmd.com" CVScreenId="6047c507-e0fe-4cea-a8b1-9b45f13f09dc" CvElementArea="444, 688, 22, 22" CvType="RadioButton" DesignTimeRectangle="446, 690, 17, 17" ElementType="RadioButton" FuzzySelectorArgument="&lt;webctrl id='frame-login' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='pm' tag='INPUT' type='radio' class='ng-untouched ng-pristine ng-valid' aaname='PM' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="ee92d180-a33b-4e95-bfbf-446276cc4676" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login | AdvancedMD' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="6047c507-e0fe-4cea-a8b1-9b45f13f09dc" CvTextArea="468, 692, 19, 12" CvTextArgument="PM" CvType="Text" DesignTimeRectangle="463, 689, 24, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='frame-login' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl aaname='PM' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='PM' /&gt;" Guid="7120c8ac-4982-476f-9e35-ef1084754aba" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="66cb63e4e73a8b26bb02c5e7c738be59.png" xmlns="">0euVlkHK2-Uyz6IeOMFzc2Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

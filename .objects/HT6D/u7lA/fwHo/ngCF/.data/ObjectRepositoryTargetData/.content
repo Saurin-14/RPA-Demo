@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="RzKzd2YyZESRcs9KHGp2_g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="login.advancedmd.com" CVScreenId="6047c507-e0fe-4cea-a8b1-9b45f13f09dc" CvElementArea="444, 688, 22, 22" CvType="RadioButton" DesignTimeRectangle="446, 690, 17, 17" ElementType="RadioButton" FuzzySelectorArgument="&lt;webctrl id='frame-login' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='pm' tag='INPUT' type='radio' class='ng-untouched ng-pristine ng-valid' aaname='PM' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="5b5d2f31-64c4-4cc7-b1ea-a316291b6bee" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login | AdvancedMD' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="6047c507-e0fe-4cea-a8b1-9b45f13f09dc" CvTextArea="468, 692, 19, 12" CvTextArgument="PM" CvType="Text" DesignTimeRectangle="463, 689, 24, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl id='frame-login' tag='IFRAME' /&gt;&lt;webctrl aaname='PM' tag='LABEL' /&gt;" Guid="77a6b31e-9e90-4dcb-9866-8a85fc596e42" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="fd4bdb2bc7d8a4da6d22f69d5f2429ce.png" xmlns="">0D6BtETC_30uCGpYQpvaEug</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

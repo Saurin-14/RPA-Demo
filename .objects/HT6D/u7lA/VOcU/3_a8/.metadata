@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Export on Run",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "3_a8TwY29UKu9mHGJv1Sug",
+  "Reference": "_TRBu2C9sEKVFTpRQxsdLA/3_a8TwY29UKu9mHGJv1Sug",
+  "ParentRef": "_TRBu2C9sEKVFTpRQxsdLA/VOcUXAGb6Eqzqx10GTPa5w",
+  "Created": "2026-06-03T10:26:16.7343995Z",
+  "Updated": "2026-06-03T10:26:16.7343995Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.7.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="5eX_IE2HN0uHlifT-QTjig" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="static-100.advancedmd.com/amds/pm/app/index.html" CVScreenId="59defa9b-b7ac-4f36-89a7-8d2385061f78" CvElementArea="1173, 502, 16, 18" CvTextArea="1010, 505, 102, 15" CvTextArgument="Financial Totals" CvType="ArrowButton" DesignTimeRectangle="985, 507, 203, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='HIPAA Security' parentid='amds-navbar' tag='A' /&gt;" Guid="72fd7042-0103-4a3e-a086-84272d59ab09" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='pm' title='AdvancedMD PM - Hematology &amp;amp; Oncology Associates of Northern California 138831 TWILFRED' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="59defa9b-b7ac-4f36-89a7-8d2385061f78" CvElementArea="1173, 479, 16, 18" CvTextArea="1010, 482, 97, 15" CvTextArgument="Financial Class" CvType="ArrowButton" DesignTimeRectangle="985, 484, 203, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Health Agencies' idx='2' parentid='amds-navbar' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Health Agencies' type='' parentid='amds-navbar' tag='A' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Health Agencies' /&gt;" Guid="6fae2e84-88a5-49a4-a81f-2762b5e45418" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b93e61ef565a2d8c80b491513df27a89.png" xmlns="">0i2eDtVEDikCBM-Fzn2xnog</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

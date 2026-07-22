@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="jYylEhJwDkmJOsVweiMCmg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="pm-wfe-126.advancedmd.com/amds/pm/app/index.html" CVScreenId="e0abc4a1-fd7c-4f2c-b8f7-3223bfec7143" CvElementArea="1155, 555, 16, 18" CvTextArea="992, 557, 101, 14" CvTextArgument="Financial Totals" CvType="ArrowButton" DesignTimeRectangle="973, 553, 203, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Financial Totals' parentid='amds-navbar' tag='A' /&gt;" Guid="2220ac0f-bbd8-452a-968f-9cf392fcc8d6" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='pm' title='AdvancedMD PM - Hematology &amp;amp; Oncology Associates of Northern California 138831 TWILFRED' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="8df05b40e4b92916a1c2c5a95b268ee8.png" xmlns="">0p4w3K5floUWk0fiGRqk7lA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

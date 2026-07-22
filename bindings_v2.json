@@ -1,0 +1,185 @@
+{
+  "version": "2.0",
+  "resources": [
+    {
+      "activityDisplayName": "Get Asset 'ReportEmailList'",
+      "activityId": "GetRobotAsset_2",
+      "resource": "asset",
+      "key": "Oncospark.Dr.Javeed_ReportMail_Prod",
+      "id": "assetOncospark.Dr.Javeed_ReportMail_ProdOncosparkFalseDr.Javeed_ReportMail_ProdFalse",
+      "value": {
+        "folderPath": {
+          "defaultValue": "Oncospark",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "Dr.Javeed_ReportMail_Prod",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    },
+    {
+      "activityDisplayName": "Get Credential 'Oncospark_Email_Credential'",
+      "activityId": "GetRobotCredential_1",
+      "resource": "asset",
+      "key": "Oncospark.Oncospark_Email_Credential",
+      "id": "assetOncospark.Oncospark_Email_CredentialOncosparkFalseOncospark_Email_CredentialFalse",
+      "value": {
+        "folderPath": {
+          "defaultValue": "Oncospark",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "Oncospark_Email_Credential",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    },
+    {
+      "activityDisplayName": "Get Asset 'SMTP_Host'",
+      "activityId": "GetRobotAsset_3",
+      "resource": "asset",
+      "key": "Oncospark.SMTP_Host",
+      "id": "assetOncospark.SMTP_HostOncosparkFalseSMTP_HostFalse",
+      "value": {
+        "folderPath": {
+          "defaultValue": "Oncospark",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "SMTP_Host",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    },
+    {
+      "activityDisplayName": "Get Asset 'SMTP_Port'",
+      "activityId": "GetRobotAsset_4",
+      "resource": "asset",
+      "key": "Oncospark.SMTP_Port",
+      "id": "assetOncospark.SMTP_PortOncosparkFalseSMTP_PortFalse",
+      "value": {
+        "folderPath": {
+          "defaultValue": "Oncospark",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "SMTP_Port",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    },
+    {
+      "activityDisplayName": "Get Asset '* DBConnectionString'",
+      "activityId": "GetRobotAsset_5",
+      "resource": "asset",
+      "key": "Oncospark.ProdDBConnectionString",
+      "id": "assetOncospark.ProdDBConnectionStringOncosparkFalseProdDBConnectionStringFalse",
+      "value": {
+        "folderPath": {
+          "defaultValue": "Oncospark",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "ProdDBConnectionString",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    },
+    {
+      "activityDisplayName": "Get Asset '*ExceptionEmailList'",
+      "activityId": "GetRobotAsset_8",
+      "resource": "asset",
+      "key": "Oncospark.Dr.Javeed_ExceptionMail_Prod",
+      "id": "assetOncospark.Dr.Javeed_ExceptionMail_ProdOncosparkFalseDr.Javeed_ExceptionMail_ProdFalse",
+      "value": {
+        "folderPath": {
+          "defaultValue": "Oncospark",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "Dr.Javeed_ExceptionMail_Prod",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    },
+    {
+      "activityDisplayName": "Get Asset",
+      "activityId": "GetRobotAsset_9",
+      "resource": "asset",
+      "key": "Oncospark.Dr.Javeed_UserName",
+      "id": "assetOncospark.Dr.Javeed_UserNameOncosparkFalseDr.Javeed_UserNameFalse",
+      "value": {
+        "folderPath": {
+          "defaultValue": "Oncospark",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "Dr.Javeed_UserName",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    },
+    {
+      "activityDisplayName": "Get Asset",
+      "activityId": "GetRobotAsset_10",
+      "resource": "asset",
+      "key": "Oncospark.Dr.Javeed_Password",
+      "id": "assetOncospark.Dr.Javeed_PasswordOncosparkFalseDr.Javeed_PasswordFalse",
+      "value": {
+        "folderPath": {
+          "defaultValue": "Oncospark",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "Dr.Javeed_Password",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    },
+    {
+      "activityDisplayName": "Get Asset",
+      "activityId": "GetRobotAsset_11",
+      "resource": "asset",
+      "key": "Oncospark.Dr.Javeed_OfficeKey",
+      "id": "assetOncospark.Dr.Javeed_OfficeKeyOncosparkFalseDr.Javeed_OfficeKeyFalse",
+      "value": {
+        "folderPath": {
+          "defaultValue": "Oncospark",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "Dr.Javeed_OfficeKey",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    }
+  ]
+}

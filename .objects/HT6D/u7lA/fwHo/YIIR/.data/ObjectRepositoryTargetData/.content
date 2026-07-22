@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="jqzesrQkzkG6Ud30Ce5Gag" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="login.advancedmd.com" CVScreenId="6047c507-e0fe-4cea-a8b1-9b45f13f09dc" CvElementArea="445, 523, 384, 27" CvType="InputBox" DesignTimeRectangle="446, 524, 383, 24" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='frame-login' tag='IFRAME' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='loginName' tag='INPUT' type='text' class='form-control text-uppercase ng-pristine ng-invalid ng-touched' aaname='Login name' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="7d81029f-6b53-4d9e-90b4-7973bb22943c" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login | AdvancedMD' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="6047c507-e0fe-4cea-a8b1-9b45f13f09dc" CvTextArea="445, 503, 71, 15" CvTextArgument="Login name" CvType="Text" DesignTimeRectangle="446, 501, 69, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl id='frame-login' tag='IFRAME' /&gt;&lt;webctrl tag='LABEL' /&gt;" Guid="f1e8035c-9867-431e-ad14-d490f6739490" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ebd0617059527eab332c0b853b7527c4.png" xmlns="">09jVbovgQbUqcSGTggfnTdQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ZoxqxN62R0CK2HOiXdXgoQ" Reference="_TRBu2C9sEKVFTpRQxsdLA/jX7SCTS_Q0SZIFqAxGpf7Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="login.advancedmd.com" CVScreenId="6bab398e-eb3f-42ca-99fb-95580b7e0a1e" CvElementArea="445, 731, 57, 27" CvTextArea="455, 738, 35, 15" CvTextArgument="Log in" CvType="Button" DesignTimeRectangle="446, 732, 383, 24" FullSelectorArgument="&lt;webctrl id='frame-login' tag='IFRAME' /&gt;&lt;webctrl tag='BUTTON' aaname='Log in' /&gt;" Guid="b159fee5-4f4f-43b0-a9d5-960b899e7fed" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login | AdvancedMD' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="aba10af090378ea322ebd2b2199cf7c7.png" xmlns="">0qiELvLSQkUiIsfDDAEhWZw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Report Center(1)",
+  "Type": "Screen",
+  "Id": "i2RCOFNW9ke2nAnlzK-xmg",
+  "Reference": "_TRBu2C9sEKVFTpRQxsdLA/i2RCOFNW9ke2nAnlzK-xmg",
+  "ParentRef": "_TRBu2C9sEKVFTpRQxsdLA/u7lAylxSfkabT2Rxk1C8AQ",
+  "Created": "2025-06-26T13:17:13.7743159Z",
+  "Updated": "2025-06-26T13:17:13.7743159Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.7.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

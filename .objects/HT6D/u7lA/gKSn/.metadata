@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome AdvancedMD PM - Hematology & Oncology ",
+  "Type": "Screen",
+  "Id": "gKSnKS84Q0qisGW_V2QxEw",
+  "Reference": "_TRBu2C9sEKVFTpRQxsdLA/gKSnKS84Q0qisGW_V2QxEw",
+  "ParentRef": "_TRBu2C9sEKVFTpRQxsdLA/u7lAylxSfkabT2Rxk1C8AQ",
+  "Created": "2025-06-26T08:07:18.1823685Z",
+  "Updated": "2025-06-26T08:07:18.1823685Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.7.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
